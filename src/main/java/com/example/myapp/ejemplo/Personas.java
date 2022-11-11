@@ -7,6 +7,7 @@ public class Personas {
 	String nombre;
 	String apellido;
 	String telefono;
+	String correo;
 	public long getId() {
 		return id;
 	}
@@ -31,5 +32,10 @@ public class Personas {
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
-
+	public String getcorreo() {
+		return correo;
+	}
+	public void setcorreo(String correo) {
+		this.correo = correo;
+	}
 }

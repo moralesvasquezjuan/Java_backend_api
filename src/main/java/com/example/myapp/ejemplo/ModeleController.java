@@ -13,9 +13,23 @@ public class ModeleController {
 	public String saludo(){
 		return "<h1>Hola Mundo STS</h1>";	
 	}
-@RequestMapping("/Persona")
-public List<Persona>getPersona(){
-	List<Persona>Personas=new Arraylist<Persona>();
-	return Personas;
+	@RequestMapping("/persona")
+	public List <Personas>getPersona(){
+		List<Personas>personas=new ArrayList<Personas>();
+		Personas p1=new Personas();
+		p1.setId(1);
+		p1.setNombre("Juan");
+		p1.setApellido("Pérez");
+		p1.setTelefono("12345678");
+		personas.add(p1);
+		
+		Personas p2=new Personas();
+		p2.setId(2);
+		p2.setNombre("Jhon");
+		p2.setApellido("Constantin");
+		p2.setTelefono("123456789");
+		personas.add(p2);
+		return personas;
+	}
 }
-}
+
