@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ModeleController {
 	@GetMapping("/saludo")
 	public String saludo(){
-		return "<h1>Hola Mundo STS</h1>";	
+		return "<h1>lista de dato</h1>";	
 	}
 	@RequestMapping("/persona")
 	public List <Personas>getPersona(){
